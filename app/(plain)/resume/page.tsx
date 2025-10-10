@@ -143,7 +143,7 @@ export default function ResumePage() {
           <h3 className="font-medium text-lg">
             Fullstack Developer (Internship){" "}
             <span className="text-gray-600 text-base">
-              — PT Teknologi Nusantara
+              — PT Aksa Digital Group
             </span>
           </h3>
           <p className="text-sm text-gray-600">Jul 2025 - Present </p>
