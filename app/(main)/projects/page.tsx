@@ -33,7 +33,7 @@ export default function ProjectPage() {
   ];
 
   return (
-    <div className="container flex flex-col items-center justify-center h-full px-6 py-12">
+    <div className="container flex flex-col items-center px-6 py-12">
       {data?.map((project) => (
         <div
           key={project.title}
