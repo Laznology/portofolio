@@ -37,13 +37,14 @@ export default function ResumePage() {
           Summary
         </h2>
         <p>
-          Hello! I&apos;m Ahmad Hanaffi, a detail-oriented Web Developer passionate about building efficient and
-          intuitive digital solutions. Skilled in both frontend and backend
-          development, with a focus on performance optimization, scalability,
-          and clean code practices. Values clear communication and active
-          collaboration across teams to deliver maintainable and impactful
-          products. Continuously learning and refining techniques to ensure
-          technical relevance and long-term quality.
+          Hello! I&apos;m Ahmad Hanaffi, a detail-oriented Web Developer
+          passionate about building efficient and intuitive digital solutions.
+          Skilled in both frontend and backend development, with a focus on
+          performance optimization, scalability, and clean code practices.
+          Values clear communication and active collaboration across teams to
+          deliver maintainable and impactful products. Continuously learning and
+          refining techniques to ensure technical relevance and long-term
+          quality.
         </p>
       </section>
 
@@ -131,6 +132,25 @@ export default function ResumePage() {
             split into sections, drop in quotes, lists, or code blocks just by
             typing /. The whole thing feels closer to building with Lego than
             filling a form.
+          </p>
+        </article>
+
+        <article className="mb-6">
+          <h3 className="font-medium text-lg">
+            <a
+              href="https://github.com/Laznology/laznology"
+              className="hover:underline"
+            >
+              Benkyou
+            </a>
+          </h3>
+          <p className="text-sm text-gray-600">
+            Astro • TailwindCSS • Expresive Code
+          </p>
+          <p>
+            A fast, minimal, and flexible blog starter built with Astro and
+            Tailwind CSS. It ships with search, dark mode, RSS, extended
+            Markdown, and smooth page transitions. Inspired by Fuwari.
           </p>
         </article>
       </section>
