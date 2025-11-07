@@ -136,12 +136,16 @@
   height: 100%;
 }
 
+::view-transition-group(page-content) {
+  overflow: hidden;
+}
+
 ::view-transition-old(page-content) {
-  animation: content-slide-out 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: content-slide-out 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 ::view-transition-new(page-content) {
-  animation: content-slide-in 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: content-slide-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 @keyframes content-slide-out {
