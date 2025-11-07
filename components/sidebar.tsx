@@ -1,6 +1,6 @@
 "use client";
 import { Link } from "next-view-transitions";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Icon } from "@iconify/react";
@@ -21,10 +21,27 @@ export default function Sidebar() {
   const [hovered, setHovered] = useState<boolean>(false);
   const kawaiiRef = useRef<(HTMLSpanElement | null)[]>([]);
 
+  const handleClose = useCallback(() => {
+    gsap.to(backdrop.current, {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+      onComplete: () => {
+        gsap.set(backdrop.current, { visibility: "hidden" });
+      },
+    });
+
+    gsap.to(sidebarPanel.current, {
+      x: -2000,
+      duration: 1,
+      ease: "power2.out",
+    });
+  }, []);
+
   useEffect(() => {
     document.addEventListener("escape", handleClose);
     return () => document.removeEventListener("escape", handleClose);
-  }, []);
+  }, [handleClose]);
 
   useGSAP(() => {
     gsap.set(backdrop.current, {
@@ -49,23 +66,6 @@ export default function Sidebar() {
       x: 0,
       duration: 0.5,
       ease: "power2.inOut",
-    });
-  };
-
-  const handleClose = () => {
-    gsap.to(backdrop.current, {
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-      onComplete: () => {
-        gsap.set(backdrop.current, { visibility: "hidden" });
-      },
-    });
-
-    gsap.to(sidebarPanel.current, {
-      x: -2000,
-      duration: 1,
-      ease: "power2.out",
     });
   };
 
