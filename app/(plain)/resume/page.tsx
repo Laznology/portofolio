@@ -203,9 +203,7 @@ export default function ResumePage() {
         <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4">
           Contact
         </h2>
-        <p>
-          Open to collaborations or freelance projects,
-        </p>
+        <p>Open to collaborations or freelance projects,</p>
         <ul className="list-disc list-inside">
           <li>
             Email:{" "}
