@@ -37,13 +37,14 @@ export default function ResumePage() {
           Summary
         </h2>
         <p>
-          Hello! I&apos;m Ahmad Hanaffi, a detail-oriented Web Developer passionate about building efficient and
-          intuitive digital solutions. Skilled in both frontend and backend
-          development, with a focus on performance optimization, scalability,
-          and clean code practices. Values clear communication and active
-          collaboration across teams to deliver maintainable and impactful
-          products. Continuously learning and refining techniques to ensure
-          technical relevance and long-term quality.
+          Hello! I&apos;m Ahmad Hanaffi, a detail-oriented Web Developer
+          passionate about building efficient and intuitive digital solutions.
+          Skilled in both frontend and backend development, with a focus on
+          performance optimization, scalability, and clean code practices.
+          Values clear communication and active collaboration across teams to
+          deliver maintainable and impactful products. Continuously learning and
+          refining techniques to ensure technical relevance and long-term
+          quality.
         </p>
       </section>
 
@@ -95,7 +96,7 @@ export default function ResumePage() {
         </h2>
         <article className="mb-6">
           <h3 className="font-medium text-lg">
-            <a
+            <a target="_blank"
               href="https://github.com/Laznology/laznology"
               className="hover:underline"
             >
@@ -132,6 +133,33 @@ export default function ResumePage() {
             typing /. The whole thing feels closer to building with Lego than
             filling a form.
           </p>
+        </article>
+
+        <article className="mb-6">
+          <h3 className="font-medium text-lg">
+            <a
+              href="https://github.com/Laznology/benkyou"
+              className="hover:underline"
+            >
+              Benkyou
+            </a>
+          </h3>
+          <p className="text-sm text-gray-600">
+            Astro • TailwindCSS • Expressive Code
+          </p>
+            <p>
+            A fast, minimal, and flexible blog starter built with Astro and
+            Tailwind CSS. It ships with search, dark mode, RSS, extended
+            Markdown, and smooth page transitions. Inspired by{" "}
+            <a
+              href="https://fuwari.vercel.app"
+              target="_blank"
+              className="hover:underline"
+            >
+              Fuwari
+            </a>
+            .
+            </p>
         </article>
       </section>
       <section className="mt-10">
@@ -183,9 +211,7 @@ export default function ResumePage() {
         <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4">
           Contact
         </h2>
-        <p>
-          Open to collaborations or freelance projects,
-        </p>
+        <p>Open to collaborations or freelance projects,</p>
         <ul className="list-disc list-inside">
           <li>
             Email:{" "}
