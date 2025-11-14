@@ -5,10 +5,10 @@ export default function Footer() {
         <div className="flex items-center gap-2 mb-2 md:mb-0">
           <span>© {new Date().getFullYear()} Laznology</span>
         </div>
-        <div className="text-center text-xs text-gray-500 italic">
+        <div className="hidden md:block text-center text-xs text-gray-500 italic">
           &ldquo;Just follow your curiosity.&rdquo; - Proverb
         </div>
-        <div className="flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4">
           <a
             href="https://github.com/Laznolgy"
             target="_blank"
