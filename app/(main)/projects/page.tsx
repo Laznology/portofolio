@@ -53,7 +53,9 @@ export default function ProjectPage() {
               sizes="(max-width: 768px) calc(100vw - 8rem), (max-width: 1024px) calc(100vw - 12rem), calc(100vw - 16rem)"
               className="rounded-md object-cover z-10"
               onLoad={(img) => {
-                const ratio = (img.target as HTMLImageElement).naturalWidth / (img.target as HTMLImageElement).naturalHeight;
+                const ratio =
+                  (img.target as HTMLImageElement).naturalWidth /
+                  (img.target as HTMLImageElement).naturalHeight;
                 setImageRatios((prev) =>
                   Math.abs((prev[project.image] ?? 0) - ratio) < 0.001
                     ? prev
@@ -88,7 +90,12 @@ export default function ProjectPage() {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    <Icon icon="mdi:github" width="20" height="20" className="sm:w-6 sm:h-6" />
+                    <Icon
+                      icon="mdi:github"
+                      width="20"
+                      height="20"
+                      className="sm:w-6 sm:h-6"
+                    />
                   </a>
                 )}
                 {project.demo_url && (
@@ -99,7 +106,12 @@ export default function ProjectPage() {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    <Icon icon="mdi:monitor" width="20" height="20" className="sm:w-6 sm:h-6" />
+                    <Icon
+                      icon="mdi:monitor"
+                      width="20"
+                      height="20"
+                      className="sm:w-6 sm:h-6"
+                    />
                   </a>
                 )}
               </div>

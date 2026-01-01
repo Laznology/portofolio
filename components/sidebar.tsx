@@ -12,7 +12,7 @@ const menuList = [
   { menu: "About", href: "/about", pageNumber: "(=^-ω-^=)" },
   { menu: "Guestbook", href: "/guestbook", pageNumber: "(ฅ^•ﻌ•^ฅ)" },
   { menu: "Projects", href: "/projects", pageNumber: "(=^‥^=)ﾉ" },
-  { menu: "Resume", href: "/resume", pageNumber: "(=^･ｪ･^=)" }
+  { menu: "Resume", href: "/resume", pageNumber: "(=^･ｪ･^=)" },
 ];
 
 export default function Sidebar() {
@@ -59,7 +59,7 @@ export default function Sidebar() {
 
   const handleOpen = () => {
     gsap.set(backdrop.current, { visibility: "visible" });
-    
+
     gsap.to(backdrop.current, {
       opacity: 1,
       duration: 0.3,
@@ -119,27 +119,27 @@ export default function Sidebar() {
           <span className="text-base text-center font-light text-white/60 font-jetbrains">
             Social
             <div className="flex gap-6">
-                <a
-                  href="https://github.com/Laznology"
-                  aria-label="GitHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-white/60 hover:text-white transition-colors hover:scale-110"
-                >
-                  <Icon icon="mdi:github" width="20" height="20" />
-                  GitHub
-                </a>
+              <a
+                href="https://github.com/Laznology"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white/60 hover:text-white transition-colors hover:scale-110"
+              >
+                <Icon icon="mdi:github" width="20" height="20" />
+                GitHub
+              </a>
 
-                <a
-                  href="https://www.linkedin.com/in/ahmad-hanaffi"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-white/60 hover:text-white transition-colors hover:scale-110"
-                >
-                  <Icon icon="mdi:linkedin" width="20" height="20" />
-                  LinkedIn
-                </a>
+              <a
+                href="https://www.linkedin.com/in/ahmad-hanaffi"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white/60 hover:text-white transition-colors hover:scale-110"
+              >
+                <Icon icon="mdi:linkedin" width="20" height="20" />
+                LinkedIn
+              </a>
             </div>
           </span>
         </div>

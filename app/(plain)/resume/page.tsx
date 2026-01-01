@@ -96,7 +96,8 @@ export default function ResumePage() {
         </h2>
         <article className="mb-6">
           <h3 className="font-medium text-lg">
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://github.com/Laznology/laznology"
               className="hover:underline"
             >
@@ -147,7 +148,7 @@ export default function ResumePage() {
           <p className="text-sm text-gray-600">
             Astro • TailwindCSS • Expressive Code
           </p>
-            <p>
+          <p>
             A fast, minimal, and flexible blog starter built with Astro and
             Tailwind CSS. It ships with search, dark mode, RSS, extended
             Markdown, and smooth page transitions. Inspired by{" "}
@@ -159,7 +160,7 @@ export default function ResumePage() {
               Fuwari
             </a>
             .
-            </p>
+          </p>
         </article>
       </section>
       <section className="mt-10">

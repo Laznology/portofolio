@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
-import createMDX from '@next/mdx'
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
-  pageExtensions: ['mdx', 'tsx', 'ts', 'md', 'mdx'],
+  pageExtensions: ["mdx", "tsx", "ts", "md", "mdx"],
   images: {
     remotePatterns: [
       {
@@ -19,15 +19,16 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.discordapp.com",
         pathname: "/**",
-      }, {
-      protocol: "https",
+      },
+      {
+        protocol: "https",
         hostname: "spcvbpnwlqcdpozamryb.supabase.co",
         pathname: "/**",
-      }
+      },
     ],
   },
 };
 
-const withMDX = createMDX()
+const withMDX = createMDX();
 
 export default withMDX(nextConfig);

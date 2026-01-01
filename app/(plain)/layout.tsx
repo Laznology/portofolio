@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Resume - Laznology",
 };
 
-export default function PlainLayout({ children }: { children: React.ReactNode }) {
+export default function PlainLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return <>{children}</>;
 }
