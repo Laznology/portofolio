@@ -11,6 +11,8 @@ jobs:
   build-and-lint:
     name: Build and Lint Next.js App
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout code
