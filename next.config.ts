@@ -25,6 +25,11 @@ const nextConfig: NextConfig = {
         hostname: "spcvbpnwlqcdpozamryb.supabase.co",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "sgp.cloud.appwrite.io",
+        pathname: "/**",
+      },
     ],
   },
 };

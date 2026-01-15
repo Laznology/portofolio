@@ -15,17 +15,17 @@ export default function ProjectPage() {
       description:
         "Blogging web app with a Notion-style editor. Basically you write in blocks instead of one big text area, so you can drag things around, split into sections, drop in quotes, lists, or code blocks just by typing /. The whole thing feels closer to building with Lego than filling a form.",
       image:
-        "https://spcvbpnwlqcdpozamryb.supabase.co/storage/v1/object/public/Images/Screenshot%20From%202025-09-26%2021-28-52.png",
+        "https://sgp.cloud.appwrite.io/v1/storage/buckets/69638e79001706779f76/files/69638ea1003776f2e5d8/view?project=6961ed6500186dda2c86&mode=admin",
       tech_stack: ["Next.js", "TailwindCSS", "Tiptap", "Postgre"],
       repo_url: "https://github.com/Laznology/kebon",
-      demo_url: "https://notes.lazlab.tech",
+      demo_url: "https://notes.lazlab.dev/demo",
     },
     {
       title: "Benkyou",
       description:
         "A fast, minimal, and flexible blog starter built with Astro and Tailwind CSS. Features search, dark mode, customizable theme, RSS, and View Transition API.",
       image:
-        "https://spcvbpnwlqcdpozamryb.supabase.co/storage/v1/object/public/Images/Screenshot%20From%202025-11-01%2019-52-48.png",
+        "https://sgp.cloud.appwrite.io/v1/storage/buckets/69638e79001706779f76/files/69638e9b00388c97bc97/view?project=6961ed6500186dda2c86&mode=admin",
       tech_stack: ["Astro", "TailwindCSS", "TypeScript"],
       repo_url: "https://github.com/Laznology/benkyou",
       demo_url: "https://benkyouu.netlify.app",
